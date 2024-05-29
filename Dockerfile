@@ -10,7 +10,7 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY --from=builder /home/gradle/build/libs/lanuz.jar .
+COPY --from=builder /home/gradle/build/libs/lanuz-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8080
 
