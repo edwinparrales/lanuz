@@ -14,4 +14,4 @@ COPY --from=builder /home/gradle/build/libs/lanuz-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8080
 
-CMD ["java","-jar","lanuz.jar","--spring.profiles.active=prd"]
+CMD ["java","-jar","lanuz-0.0.1-SNAPSHOT.jar","--spring.profiles.active=prd"]
