@@ -30,7 +30,12 @@ dependencies {
     developmentOnly('org.springframework.boot:spring-boot-devtools')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
-
+bootJar {
+    archiveFileName = 'lanuz-0.0.1-SNAPSHOT.jar'
+}
 tasks.withType(Test) {
+    useJUnitPlatform()
+}
+tasks.named('test') {
     useJUnitPlatform()
 }
