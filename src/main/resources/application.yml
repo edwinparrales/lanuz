@@ -2,7 +2,16 @@ spring:
   application:
     name: lanuz
   profiles:
-    active: prd # Env variable's default value syntax
+    active: dev # Env variable's default value syntax
+#Configuracion para archivos
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+media:
+  location: mediafiles
+
 
   jpa:
     hibernate:
